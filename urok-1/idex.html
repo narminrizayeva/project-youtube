@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Suez+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black12: "#121212",
+                        black18: "#181818",
+                        black21: "#212121",
+                        black32: "#323232",
+                        black38: "#383838",
+                        black47: "#474747",
+                        white: "#FFFFFF",
+                        gray: "#AAAAAA",
+                        blue: "#3DA6FF",
+
+
+                    }
+                },
+                fontFamily: {
+                    'Roboto': ["Roboto", "sans-serif"]
+                },
+            },
+        }
+    </script>
+    <style>
+        .custom-scrollbar::webkit-scrollbar{
+            width: 12px;
+        }
+        .custom-scrollbar::webkit-scrollbar-track{
+            background: #181818;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb{
+            background-color: #606060;
+            border-radius: 10px;
+            border: 3px solid #181818;
+        }
+        .custom-scrollbar-second::-webkit-scrollbar-thumb{
+            background-color: #606060;
+            border-radius: 10px;
+            border: 7px solid #181818;
+
+        }
+        .custom-scrollbar::webkit-scrollbar-thumb:hover{
+            background-color: #909090;
+        }
+    </style>
+</head>
+
+<body class="flex h-screen overflow-hidden text-white">
+    <aside class="w-[220px] shrink-0 bg-black21 pr-[20px] overflow-y-auto custom-scrollbar">
+        <div class="py-[16px] px-[20px] flex  items-center mb-[12px]">
+            <button class="size-[22px] inline-flex justify-center mr-[18px] ">
+                <i class="fa fa-bars "></i>
+            </button>
+            <a href="#">
+                <figure>
+                    <img src="./Youtube logo.svg" alt="">
+                </figure>
+            </a>
+        </div>
+        <div>
+            <a href="" class="flex items-center py-[5px]  h-[34px] px-[20px]">
+                <i class="fa fa-home inline-flex size-[24px] text-[22px] mr-[20px]"></i>
+                <span class="text-[13px]">Home</span>
+            </a>
+            <a href="" class="flex items-center py-[5px] h-[34px] px-[20px]">
+                <i class="fa-brands fa-internet-explorer inline-flex size-[24px] text-[22px] mr-[20px]"></i>
+                <span class="text-[13px]">Explores</span>
+            </a>
+            <a href="" class="flex items-center py-[5px] h-[34px] px-[20px]">
+                <i class="fa-solid fa-subscript inline-flex size-[24px] text-[22px] mr-[20px]"></i>
+                <span class="text-[13px]">Shorts</span>
+            </a>
+            <a href="" class="flex items-center py-[5px] h-[34px] px-[20px]">
+                <i class="fa fa-home inline-flex size-[24px] text-[22px] mr-[20px]"></i>
+                <span class="text-[13px]">Subscriptions</span>
+            </a>
+        </div>
+        <hr class="border-black38 my-[16px]">
+        <div>
+            <a href="" class="flex items-center py-[5px]  h-[34px] px-[20px]">
+                <i class="fa-solid fa-book inline-flex size-[24px] text-[22px] mr-[20px]"></i>
+                <span class="text-[13px]">Library</span>
+            </a>
+            <a href="" class="flex items-center py-[5px] h-[34px] px-[20px]">
+                <i class="fa-regular fa-clock inline-flex size-[24px] text-[22px] mr-[20px]"></i>
+                <span class="text-[13px]">History</span>
+            </a>
+            <a href="" class="flex items-center py-[5px] h-[34px] px-[20px]">
+                <i class="fa-solid fa-video inline-flex size-[24px] text-[22px] mr-[20px]"></i>
+                <span class="text-[13px]">Your videos</span>
+            </a>
+            <a href="" class="flex items-center py-[5px] h-[34px] px-[20px]">
+                <i class="fa fa-home inline-flex size-[24px] text-[22px] mr-[20px]"></i>
+                <span class="text-[13px]">Watch later</span>
+            </a>
+            <a href="" class="flex items-center py-[5px] h-[34px] px-[20px]">
+                <i class="fa-regular fa-thumbs-up inline-flex size-[24px] text-[22px] mr-[20px]"></i>
+                <span class="text-[13px]">Liked videos</span>
+            </a>
+            <a href="" class="flex items-center py-[5px] h-[34px] px-[20px]">
+                <i class="fa-solid fa-angle-down inline-flex size-[24px] text-[22px] mr-[20px]"></i>
+                <span class="text-[13px]">Show More</span>
+            </a>
+        </div>
+        <hr class="border-black38 my-[16px]">
+        <div>
+            <h3 class="px-[20px] text-[#aaa] uppercase text-[13px] mb-[8px]">Subscriptions</h3>
+            <a href="" class="flex relative items-center px-[20px] h-[32px] whitespace-nowrap">
+                <figure class="size-[22px] shrink-0 mr-[20px] overflow-hidden rounded-full">
+                    <img src="./man.photo.jpg" alt="">
+                </figure>
+                <span class="line-clamp-1 text-[12px]">Nadir On The Go</span>
+                <span class="size-[4px] absolute bg-blue right-0 m-auto top-0 bottom-0 rounded-full"></span>
+
+            </a>
+            <a href="" class="flex relative items-center px-[20px] h-[32px] whitespace-nowrap">
+                <figure class="size-[22px] shrink-0 mr-[20px] overflow-hidden rounded-full">
+                    <img src="./Ellipse 1 (1).png" alt="">
+                </figure>
+                <span class="line-clamp-1 text-[12px]">Coke Studio Bangla</span>
+                <span class="size-[4px] absolute bg-blue right-0 m-auto top-0 bottom-0 rounded-full"></span>
+
+            </a>
+            <a href="" class="flex relative items-center px-[20px] h-[32px] whitespace-nowrap">
+                <figure class="size-[22px] shrink-0 mr-[20px] overflow-hidden rounded-full">
+                    <img src="./Ellipse 1 (2).png" alt="">
+                </figure>
+                <span class="line-clamp-1 text-[12px]">MKBHD</span>
+
+
+            </a>
+            <a href="" class="flex relative items-center px-[20px] h-[32px] whitespace-nowrap">
+                <figure class="size-[22px] shrink-0 mr-[20px] overflow-hidden rounded-full">
+                    <img src="./Ellipse 1 (3).png" alt="">
+                </figure>
+                <span class="line-clamp-1 text-[12px]">Figma</span>
+                <span class="size-[4px] absolute bg-blue right-0 m-auto top-0 bottom-0 rounded-full"></span>
+
+            </a>
+            <a href="" class="flex relative items-center px-[20px] h-[32px] whitespace-nowrap">
+                <figure class="size-[22px] shrink-0 mr-[20px] overflow-hidden rounded-full">
+                    <img src="./Ellipse 1 (4).png" alt="">
+                </figure>
+                <span class="line-clamp-1 text-[12px] text-ellipsis inline">ATC Android ToTo C...</span>
+
+
+            </a>
+            <a href="" class="flex relative items-center px-[20px] h-[32px] whitespace-nowrap">
+                <figure class="size-[22px] shrink-0 mr-[20px] overflow-hidden rounded-full">
+                    <img src="./Ellipse 1 (5).png" alt="">
+                </figure>
+                <span class="line-clamp-1 text-[12px]">Alux.com</span>
+                <span class="size-[4px] absolute bg-blue right-0 m-auto top-0 bottom-0 rounded-full"></span>
+
+            </a>
+
+        </div>
+
+    </aside>
+    <main class="bg-black18 w-[calc(100%_-_220px)] pl-[14px]">
+        <div class="flex justify-between px-[32px] py-[11px] ">
+            <div class="flex-1 flex justify-center">
+                <div class="w-[534px] h-[36px] flex items-center border border-black38">
+                    <input type="text" class="flex-1 bg-transparent px-[6px] outline-none placeholder:text-[#aaa]"
+                        placeholder="Search...">
+                    <span class="inline-flex w-[56px] h-[36px] bg-black32 items-center justify-center">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+                <span class="inline-flex w-[56px] h-[36px]  items-center justify-center">
+                    <i class="fa-solid fa-microphone"></i>
+                </span>
+            </div>
+            <div class="flex space-x-[20px]">
+                <button class="size-[28px] flex justify-center items-center ">
+                    <i class="fa-solid fa-video"></i>
+                </button>
+                <button class="size-[28px] flex justify-center items-center ">
+                    <i class="fa-solid fa-border-none"></i>
+                </button>
+                <button class="size-[28px] flex justify-center items-center ">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+                <div>
+                    <button class="size-[28px] object-cover rounded-full overflow-hidden
+                      justify-center items-center ">
+                        <img src="./man.photo.jpg" alt="">
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <hr class=" border-black38">
+        <div class="py-[10px] flex space-x-[12px] overflow-x-auto">
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-white text-black border border-black47">
+                All
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                Cook Studio
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                UX
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                Case Study
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                Music
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                Bnagla Lofi
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                Tour
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                Saintmartin
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                Tech
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                iPhone 13
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                User Interface Design
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                Computer Programming
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                Tech
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                iPhone 13
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                User Interface Design
+            </button>
+            <button
+                class="h-[30px] whitespace-nowrap text-[12px] rounded-full inline-flex items-center px-[12px] bg-black38 text-white border border-black47">
+                Computer Programming
+            </button>
+
+        </div>
+        <hr class=" border-black38">
+        <div class="mt-[10px] pr-[14px] overflow-y-auto h-[calc(100vh_-_100px)]">
+            <div class="grid grid-cols-4 gap-[14px]">
+                <article class="">
+                    <figure>
+                        <img class="w-[242px] h-[136px]" src="./Thumbnail.png" alt="">
+                    </figure>
+                    <div class="flex mt-[10px]">
+                        <figure class="size-[32px] shrink-0">
+                            <img src="./Ellipse 1 (1).png" alt="">
+                        </figure>
+                        <div>
+                            <span class="text-[14px]">
+                                Bulbuli | Coke Studio Bangla |
+                                Season One | Ritu Raj X Nandita
+                            </span>
+                            <p class="text-[12px] text-[#aaa]">
+                                Coke Studio Bangla
+                            </p>
+                            <p class="text-[12px] text-[#aaa] ">
+                                1.5M views 2 days
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </article>
+                <article class="">
+                    <figure>
+                        <img class="w-[242px] h-[136px]" src="./Thumbnail (1).png" alt="">
+                    </figure>
+                    <div class="flex mt-[10px]">
+                        <figure class="size-[32px] shrink-0">
+                            <img src="./Ellipse 1 (2).png" alt="">
+                        </figure>
+                        <div>
+                            <span class="text-[14px]">
+                                Infinix Note 12 : ১৮ হাজার টাকায়
+                                AMOLED ডিসপ্লে ও Helio G88 SoC!
+                            </span>
+                            <p class="text-[12px] text-[#aaa]">
+                                Coke Studio Bangla
+                            </p>
+                            <p class="text-[12px] text-[#aaa] ">
+                                1.5M views 2 days
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </article>
+                <article class="">
+                    <figure>
+                        <img class="w-[242px] h-[136px]" src="./Thumbnail (2).png" alt="">
+                    </figure>
+                    <div class="flex mt-[10px]">
+                        <figure class="size-[32px] shrink-0">
+                            <img src="./Ellipse 1 (3).png" alt="">
+                        </figure>
+                        <div>
+                            <span class="text-[14px]">
+                                My first UX Design case study -
+                                This got me my first job.
+                            </span>
+                            <p class="text-[12px] text-[#aaa]">
+                                Coke Studio Bangla
+                            </p>
+                            <p class="text-[12px] text-[#aaa] ">
+                                1.5M views 2 days
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </article>
+                <article class="">
+                    <figure>
+                        <img class="w-[242px] h-[136px]" src="./Thumbnail (3).png" alt="">
+                    </figure>
+                    <div class="flex mt-[10px]">
+                        <div>
+                            <span class="text-[14px]">
+                                My Mix
+                            </span>
+                            <p class="text-[12px] 
+                            text-[#aaa]">
+                                Lopamudra Mitra, Anupam Roy, and more
+                            </p>
+
+                        </div>
+                    </div>
+
+
+
+                </article>
+                <article class="">
+                    <figure>
+                        <img class="w-[242px] h-[136px]" src="./Thumbnail (4).png" alt="">
+                    </figure>
+                    <div class="flex mt-[10px]">
+                        <figure class="size-[32px] shrink-0">
+                            <img src="./Ellipse 1 (4).png" alt="">
+                        </figure>
+                        <div>
+                            <span class="text-[14px]">
+                                UX Design - What is it? (From AJ
+                                &Smart)
+                            </span>
+                            <p class="text-[12px] text-[#aaa]">
+                                Coke Studio Bangla
+                            </p>
+                            <p class="text-[12px] text-[#aaa] ">
+                                1.5M views 2 days
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </article>
+                <article class="">
+                    <figure>
+                        <img class="w-[242px] h-[136px]" src="./Thumbnail (5).png" alt="">
+                    </figure>
+                    <div class="flex mt-[10px]">
+                        <figure class="size-[32px] shrink-0">
+                            <img src="./Ellipse 1 (5).png" alt="">
+                        </figure>
+                        <div>
+                            <span class="text-[14px]">
+                                Mix - Mombati | Mohon Sharif | Dhakaiya Dose | Mahib Ahsan ft Anika
+                            </span>
+                            <p class="text-[12px] text-[#aaa]">
+                                Coke Studio Bangla
+                            </p>
+                            <p class="text-[12px] text-[#aaa] ">
+                                1.5M views 2 days
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </article>
+                <article class="">
+                    <figure>
+                        <img class="w-[242px] h-[136px]" src="./Thumbnail (6).png" alt="">
+                    </figure>
+                    <div class="flex mt-[10px]">
+                        <figure class="size-[32px] shrink-0">
+                            <img src="./Ellipse 1 (1).png" alt="">
+                        </figure>
+                        <div>
+                            <span class="text-[14px]">
+                                বাংলাদেশ পাসপোর্টে ৪৮ দেশে ভিসা-
+                                ফ্রী ভ্রমন | 48 VISA-FREE
+                            </span>
+                            <p class="text-[12px] text-[#aaa]">
+                                Coke Studio Bangla
+                            </p>
+                            <p class="text-[12px] text-[#aaa] ">
+                                1.5M views 2 days
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </article>
+                <article class="">
+                    <figure>
+                        <img class="w-[242px] h-[136px]" src="./Thumbnail (7).png" alt="">
+                    </figure>
+                    <div class="flex mt-[10px]">
+                        <figure class="size-[32px] shrink-0">
+                            <img src="./Ellipse 1 (2).png" alt="">
+                        </figure>
+                        <div>
+                            <span class="text-[14px]">
+                                14 Advanced Tips to Design
+                                FASTER in Figma
+                            </span>
+                            <p class="text-[12px] text-[#aaa]">
+                                Coke Studio Bangla
+                            </p>
+                            <p class="text-[12px] text-[#aaa] ">
+                                1.5M views 2 days
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </article>
+            </div>
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
